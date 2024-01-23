@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Assignment 3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Assignment 3</title>
 
-    <style type="text/tailwindcss">
-        @layer utilities {
+  <style type="text/tailwindcss">
+    @layer utilities {
           .content-auto {
             content-visibility: auto;
           }
@@ -18,277 +18,485 @@
 </head>
 
 <body>
-    <header class="sm:p-10 lg:p-20">
-        <nav>
-
-        </nav>
-        <section>
-          <div class="">
-            <img src="images/1.png" alt="">
+  <header class="sm:p-10 lg:p-20">
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 3</a></li>
+            </ul>
           </div>
-          <div class="lg:relative">
-            <div class="lg:-mt-44 lg:left-[560px] card sm:w-full lg:w-96 bg-[#131318] text-primary-content">
-              <div class="card-body">
-                <h2 class="card-title">Card title!</h2>
-                <p>If a dog chews shoes whose shoes does he choose</p>
-              </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="flex-none gap-2">
+            <div class="form-control">
+              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
             </div>
           </div>
-        </section>
-        <!-- Professional Section -->
-        <section>
-          <h3 class="font-bold text-4xl text-center lg:py-10  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
-          <p class="text-center lg:px-40 sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-        </section>
-        <div class="grid justify-center lg:grid-cols-4 sm:grid-cols-1 gap-4 sm:w-full">
-          <div class="bg-red-950">
-            <div class="flex text-center align-middle px-24">
-              <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
-            </div>
-            <h4 class="text-center text-2xl">Prayer Facility</h4>
-            <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
-          </div>
-          <div class="bg-red-950">
-            <div class="flex text-center align-middle px-24">
-              <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
-            </div>
-            <h4 class="text-center text-2xl">Prayer Facility</h4>
-            <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
-          </div>
-          <div class="bg-red-950">
-            <div class="flex text-center align-middle px-24">
-              <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
-            </div>
-            <h4 class="text-center text-2xl">Prayer Facility</h4>
-            <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
-          </div>
-          <div class="bg-red-950">
-            <div class="flex text-center align-middle px-24">
-              <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
-            </div>
-            <h4 class="text-center text-2xl">Prayer Facility</h4>
-            <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
+          <div class="navbar-end">
+            <a class="btn">Button</a>
           </div>
         </div>
-        <!-- Program section -->
-        <section>
-          <section>
-            <h3 class="font-bold text-4xl text-center lg:py-10  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
-            <p class="text-center lg:px-40 sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-            <div>
-              <div class="flex lg:flex-row sm:flex-col">
-                <!-- Image 1 -->
-                <div class="flex-1 card w-96 bg-base-100 shadow-xl image-full sm:w-full">
-                  <figure><img src="images/2.png" alt="Shoes" /></figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <button class="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Image 2 -->
-                <div class="flex-1 card w-96 bg-base-100 shadow-xl image-full sm:w-full">
-                  <figure><img src="images/3.png" alt="Shoes" /></figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                      <button class="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="flex-1 card w-96 bg-base-100 shadow-xl image-full lg:w-full sm:w-full">
-                  <figure><img src="images/4.png" alt="Shoes" /></figure>
-                  <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                  </div>
+    </nav>
+    <section>
+      <div>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:relative">
+        <div class="lg:-mt-44 lg:left-[50px] card sm:w-full lg:w-96 bg-[#131318] text-primary-content">
+          <div class="card-body">
+            <h2 class="card-title">Card title!</h2>
+            <p>If a dog chews shoes whose shoes does he choose</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Professional Section -->
+    <section>
+      <h3 class="font-bold text-4xl text-center lg:py-10  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
+      <p class="text-center lg:px-40 sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin. </p>
+    </section>
+    <div class="grid justify-center lg:grid-cols-4 sm:grid-cols-1 gap-4 sm:w-full">
+      <div class="bg-red-950">
+        <div class="flex text-center align-middle px-24">
+          <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+        </div>
+        <h4 class="text-center text-2xl">Prayer Facility</h4>
+        <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
+      </div>
+      <div class="bg-red-950">
+        <div class="flex text-center align-middle px-24">
+          <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+        </div>
+        <h4 class="text-center text-2xl">Prayer Facility</h4>
+        <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
+      </div>
+      <div class="bg-red-950">
+        <div class="flex text-center align-middle px-24">
+          <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+        </div>
+        <h4 class="text-center text-2xl">Prayer Facility</h4>
+        <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
+      </div>
+      <div class="bg-red-950">
+        <div class="flex text-center align-middle px-24">
+          <div class="radial-progress text-primary" style="--value:90;" role="progressbar">90%</div>
+        </div>
+        <h4 class="text-center text-2xl">Prayer Facility</h4>
+        <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
+      </div>
+    </div>
+    <!-- Program section -->
+    <section>
+      <section>
+        <h3 class="font-bold text-4xl text-center lg:py-10  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
+        <p class="text-center lg:px-40 sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin. </p>
+        <div>
+          <div class="flex lg:flex-row sm:flex-col">
+            <!-- Image 1 -->
+            <div class="flex-1 card w-96 bg-base-100 shadow-xl image-full sm:w-full">
+              <figure><img src="images/2.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Buy Now</button>
                 </div>
               </div>
             </div>
-          </section>
-        </section>
-        <!-- New Product section -->
-        <section>
-          <h3 class="font-bold text-4xl text-center lg:py-10  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
-            <p class="text-center lg:px-40 sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-
-            <!-- Main div -->
-            <div class="grid lg:grid-cols-2 sm:grid-cols-1 sm:w-full">
-              <!-- Product 1 -->
-              <div>
-                <div class="card card-side bg-base-100 shadow-xl">
-                  <figure><img src="images/5.png" alt="Movie"/></figure>
-                  <div class="card-body">
-                    <!-- icon -->
-                    <div class="flex">
-                      <img src="images/star.jpg" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/view.png" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/love.png" alt="">
-                      <p class="ml-2">5.0</p>
-                    </div>
-                    <h2 class="card-title">New movie is released!</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div class="flex">
-                      <p>Price: $200</p>
-                      <div class="flex">
-                        <img src="images/curt.png" alt="">
-                        <p>Delivery Fee : Free</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Product 2 -->
-              <div>
-                <div class="card card-side bg-base-100 shadow-xl">
-                  <figure><img src="images/6.png" alt="Movie"/></figure>
-                  <div class="card-body">
-                    <!-- icon -->
-                    <div class="flex">
-                      <img src="images/star.jpg" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/view.png" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/love.png" alt="">
-                      <p class="ml-2">5.0</p>
-                    </div>
-                    <h2 class="card-title">New movie is released!</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div class="flex">
-                      <p>Price: $200</p>
-                      <div class="flex">
-                        <img src="images/curt.png" alt="">
-                        <p>Delivery Fee : Free</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Product 3 -->
-              <div>
-                <div class="card card-side bg-base-100 shadow-xl">
-                  <figure><img src="images/7.png" alt="Movie"/></figure>
-                  <div class="card-body">
-                    <!-- icon -->
-                    <div class="flex">
-                      <img src="images/star.jpg" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/view.png" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/love.png" alt="">
-                      <p class="ml-2">5.0</p>
-                    </div>
-                    <h2 class="card-title">New movie is released!</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div class="flex">
-                      <p>Price: $200</p>
-                      <div class="flex">
-                        <img src="images/curt.png" alt="">
-                        <p>Delivery Fee : Free</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Product 4 -->
-              <div>
-                <div class="card card-side bg-base-100 shadow-xl">
-                  <figure><img src="images/8.png" alt="Movie"/></figure>
-                  <div class="card-body">
-                    <!-- icon -->
-                    <div class="flex">
-                      <img src="images/star.jpg" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/view.png" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/love.png" alt="">
-                      <p class="ml-2">5.0</p>
-                    </div>
-                    <h2 class="card-title">New movie is released!</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div class="flex">
-                      <p>Price: $200</p>
-                      <div class="flex">
-                        <img src="images/curt.png" alt="">
-                        <p>Delivery Fee : Free</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Product 5 -->
-              <div>
-                <div class="card card-side bg-base-100 shadow-xl">
-                  <figure><img src="images/9.png" alt="Movie"/></figure>
-                  <div class="card-body">
-                    <!-- icon -->
-                    <div class="flex">
-                      <img src="images/star.jpg" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/view.png" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/love.png" alt="">
-                      <p class="ml-2">5.0</p>
-                    </div>
-                    <h2 class="card-title">New movie is released!</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div class="flex">
-                      <p>Price: $200</p>
-                      <div class="flex">
-                        <img src="images/curt.png" alt="">
-                        <p>Delivery Fee : Free</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Product 6 -->
-              <div>
-                <div class="card card-side bg-base-100 shadow-xl">
-                  <figure><img src="images/10.png" alt="Movie"/></figure>
-                  <div class="card-body">
-                    <!-- icon -->
-                    <div class="flex">
-                      <img src="images/star.jpg" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/view.png" alt="">
-                      <p class="ml-2">5.0</p>
-                      <img src="images/love.png" alt="">
-                      <p class="ml-2">5.0</p>
-                    </div>
-                    <h2 class="card-title">New movie is released!</h2>
-                    <p>Click the button to watch on Jetflix app.</p>
-                    <div class="flex">
-                      <p>Price: $200</p>
-                      <div class="flex">
-                        <img src="images/curt.png" alt="">
-                        <p>Delivery Fee : Free</p>
-                      </div>
-                    </div>
-                  </div>
+            <!-- Image 2 -->
+            <div class="flex-1 card w-96 bg-base-100 shadow-xl image-full sm:w-full">
+              <figure><img src="images/3.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn btn-primary">Buy Now</button>
                 </div>
               </div>
             </div>
-        </section>
-    </header>
-    <main>
-        <section>
+          </div>
+          <div>
+            <div class="flex-1 card w-96 bg-base-100 shadow-xl image-full lg:w-full sm:w-full">
+              <figure><img src="images/4.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- New Product section -->
+    <section>
+      <h3 class="font-bold text-4xl text-center lg:py-10  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
+      <p class="text-center lg:px-40 sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin. </p>
 
-        </section>
-        <section>
+      <!-- Main div -->
+      <div class="grid lg:grid-cols-2 sm:grid-cols-1 sm:w-full gap-4">
+        <!-- Product 1 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="images/5.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <!-- icon -->
+              <div class="flex">
+                <img src="images/star.jpg" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/view.png" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/love.png" alt="">
+                <p class="ml-2">5.0</p>
+              </div>
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <p>Price: $200</p>
+                <div class="flex">
+                  <img src="images/curt.png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="images/6.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <!-- icon -->
+              <div class="flex">
+                <img src="images/star.jpg" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/view.png" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/love.png" alt="">
+                <p class="ml-2">5.0</p>
+              </div>
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <p>Price: $200</p>
+                <div class="flex">
+                  <img src="images/curt.png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="images/7.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <!-- icon -->
+              <div class="flex">
+                <img src="images/star.jpg" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/view.png" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/love.png" alt="">
+                <p class="ml-2">5.0</p>
+              </div>
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <p>Price: $200</p>
+                <div class="flex">
+                  <img src="images/curt.png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="images/8.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <!-- icon -->
+              <div class="flex">
+                <img src="images/star.jpg" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/view.png" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/love.png" alt="">
+                <p class="ml-2">5.0</p>
+              </div>
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <p>Price: $200</p>
+                <div class="flex">
+                  <img src="images/curt.png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="images/9.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <!-- icon -->
+              <div class="flex">
+                <img src="images/star.jpg" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/view.png" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/love.png" alt="">
+                <p class="ml-2">5.0</p>
+              </div>
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <p>Price: $200</p>
+                <div class="flex">
+                  <img src="images/curt.png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure><img src="images/10.png" alt="Movie" /></figure>
+            <div class="card-body">
+              <!-- icon -->
+              <div class="flex">
+                <img src="images/star.jpg" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/view.png" alt="">
+                <p class="ml-2">5.0</p>
+                <img src="images/love.png" alt="">
+                <p class="ml-2">5.0</p>
+              </div>
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+              <div class="flex">
+                <p>Price: $200</p>
+                <div class="flex">
+                  <img src="images/curt.png" alt="">
+                  <p>Delivery Fee : Free</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client Question section  -->
+    <section>
+      <h3 class="font-bold text-4xl text-center lg:py-10  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
+      <p class="text-center lg:px-40 sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin. </p>
+      <div class="flex gap-4 lg:flex-row sm:flex-col">
+        <div class="">
+          <img class="sm:w-full" src="images/11.png" alt="">
+        </div>
+        <div class="">
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-3xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-3xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-3xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-3xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-3xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-3xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content">
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Get in touch section -->
+    <section>
+      <h3 class="font-bold text-4xl text-center lg:py-10  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
+      <p class="text-center lg:px-40 sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+        placerat dolor. Purus urna in sit nullam proin. </p>
+      <div class="flex lg:flex-row sm:flex-col gap-8">
+        <div class="">
+          <!-- card 1 -->
+          <div class="card w-96 bg-base-100 shadow-xl ">
+            <img class="w-[20%] pl-5" src="images/Group 1171275317.png" alt="Shoes" />
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card w-96 bg-base-100 shadow-xl ">
+            <img class="w-[20%] pl-5" src="images/Group 1171275318.png" alt="Shoes" />
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card w-96 bg-base-100 shadow-xl ">
+            <img class="w-[20%] pl-5" src="images/Group 1171275321.png" alt="Shoes" />
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+        </div>
+        <!-- input section -->
+        <div class="">
+          <label class="form-control w-full max-w-xs">
+            <div class="label">
+              <span class="label-text">What is your name?</span>
+              <span class="label-text-alt">Top Right label</span>
+            </div>
+            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <div class="label">
+              <span class="label-text-alt">Bottom Left label</span>
+              <span class="label-text-alt">Bottom Right label</span>
+            </div>
+          </label>
+          <button class="btn btn-error">Error</button>
+        </div>
+      </div>
+      <!-- Social section -->
+      <section class="bg-lime-100 mt-10 w-full lg:h-60 sm:h-32">
+        <div class="flex justify-center w-auto align-middle">
+          <img class="w-auto lg:mt-28 sm:mt-12" src="images/Social.png" alt="">
+        </div>
+      </section>
+    </section>
+  </header>
 
-        </section>
-    </main>
-    <footer>
-
-    </footer>
+  <footer class="footer p-10 bg-base-200 text-base-content">
+    <aside class="pl-6">
+      <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+      <p>Dit amet consectetur Condimentum </p>
+      <div class="flex">
+        <img src="images/email.png" alt="">
+        <p>(+62) 123-321-543</p>
+      </div>
+      <div class="flex">
+        <img src="images/phone.png" alt="">
+        <p>(+62) 123-321-543</p>
+      </div>
+    </aside>
+    <nav>
+      <header class="footer-title">Services</header>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <header class="footer-title">Company</header>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <header class="footer-title">Legal</header>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+  </footer>
 </body>
 
 </html>

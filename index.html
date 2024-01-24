@@ -6,21 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <title>Assignment 3</title>
-
   <style type="text/tailwindcss">
+    
     @layer utilities {
           .content-auto {
             content-visibility: auto;
+            font-family: 'Manrope';
           }
         }
-      </style>
+  </style>
 </head>
 
-<body>
-  <header class="sm:p-10 lg:p-20">
+<body class="font-Manrope">
+  <header class="sm:px-10 lg:px-20">
     <nav>
-      <div class="navbar bg-base-100">
+      <div class="navbar">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -37,7 +42,7 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
+          <a class="btn btn-ghost text-3xl">Hockeys</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -49,10 +54,10 @@
           </ul>
         </div>
         <div class="form-control">
-          <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto"/>
+          <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
         </div>
         <div class="navbar-end">
-          <a class="btn">Button</a>
+          <a class="btn bg-[#FF4240]">Get Ticket</a>
         </div>
       </div>
     </nav>
@@ -102,20 +107,20 @@
     </section>
     <!-- Professional Section -->
     <section>
-      <h3 class="font-bold text-4xl text-center lg:pt-32  lg:px-20 sm:px-12">Professional Hockeys Club</h3>
-      <p class="text-center lg:px-[300px] sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+      <h3 class="font-bold text-4xl text-center lg:pt-32  lg:px-20 sm:px-12 sm:mt-8">Professional Hockeys Club</h3>
+      <p class="text-center lg:px-[300px] sm:p-4 sm:mb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
         placerat dolor. Purus urna in sit nullam proin. </p>
     </section>
     <div class="grid justify-center lg:grid-cols-4 sm:grid-cols-1 gap-4 sm:w-full">
       <div>
         <div class="flex text-center align-middle px-24">
-          <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+          <div class="radial-progress flex align-middle justify-center text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
         </div>
         <h4 class="text-center text-2xl font-bold">Prayer Facility</h4>
         <p class="text-center">Amet consectetur. Condimentum dignissim adipiscing.</p>
       </div>
-      <div>
-        <div class="flex text-center align-middle px-24">
+      <div >
+        <div class="flex text-center align-middle lg:px-24">
           <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
         </div>
         <h4 class="text-center text-2xl font-bold">Prayer Facility</h4>
@@ -139,8 +144,8 @@
     <!-- Program section -->
     <section>
       <section>
-        <h3 class="font-bold text-4xl text-center lg:pt-32  lg:px-20 sm:px-12">Program Sections</h3>
-        <p class="text-center lg:px-[300px] sm:p-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+        <h3 class="font-bold sm:mt-8 text-4xl text-center lg:pt-32  lg:px-20 sm:px-12">Program Sections</h3>
+        <p class="text-center lg:px-[300px] sm:p-4 sm:mb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
           turpis placerat dolor. Purus urna in sit nullam proin. </p>
         <div>
           <div class="flex gap-4 mb-4 lg:flex-row sm:flex-col">
@@ -357,7 +362,8 @@
     <!-- Client Question section  -->
     <section>
       <h3 class="font-bold text-4xl text-center lg:pt-32  lg:px-20 sm:px-12">Client Question</h3>
-      <p class="text-center lg:px-[300px] sm:p-4 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      <p class="text-center lg:px-[300px] sm:p-4 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+        turpis placerat dolor. Purus urna in sit nullam proin. </p>
       <div class="flex gap-4 lg:flex-row sm:flex-col">
         <div>
           <img class="sm:w-full" src="images/11.png" alt="">
@@ -427,44 +433,64 @@
       <div class="flex lg:flex-row sm:flex-col gap-8">
         <div class="">
           <!-- card 1 -->
-          <div class=" mb-4 card w-96 bg-[#BCED6D1A]">
-            <img class="w-[20%] pl-5" src="images/Group 1171275317.png" alt="Shoes" />
+          <div class=" mb-4 card sm:w-full lg:w-96 bg-[#BCED6D1A]">
+            <img class="w-[20%] sm:w-[10%] pl-5" src="images/Group 1171275317.png" alt="Shoes" />
             <div class="card-body">
               <p> <span class="text-gray-400">Phone Number: </span> <br>
-                <span class="text-black">(+62) 123-321-543</span></p>
+                <span class="text-black">(+62) 123-321-543</span>
+              </p>
             </div>
           </div>
           <!-- card 2 -->
-          <div class="mb-4 card w-96 bg-[#FDDD5F1A]">
-            <img class="w-[20%] pl-5" src="images/Group 1171275318.png" alt="Shoes" />
+          <div class="mb-4 card sm:w-full lg:w-96 bg-[#FDDD5F1A]">
+            <img class="lg:w-[20%] sm:w-[10%] pl-5" src="images/Group 1171275318.png" alt="Shoes" />
             <div class="card-body">
               <p> <span class="text-gray-400">Email: </span> <br>
-                <span class="text-black"> hockeys@support.com</span></p>
+                <span class="text-black"> hockeys@support.com</span>
+              </p>
             </div>
           </div>
           <!-- card 3 -->
-          <div class="card w-96 bg-[629CF31A]">
-            <img class="w-[20%] pl-5" src="images/Group 1171275321.png" alt="Shoes" />
+          <div class="card sm:w-full lg:w-96 bg-[#629CF31A]">
+            <img class="w-[20%] sm:w-[10%] pl-5" src="images/Group 1171275321.png" alt="Shoes" />
             <div class="card-body">
               <p> <span class="text-gray-400">Location : </span> <br>
-                <span class="text-black">152/1 Mohakhali Wireless Gate/span></p>
+                <span class="text-black">152/1 Mohakhali Wireless Gate/span>
+              </p>
             </div>
           </div>
         </div>
         <!-- input section -->
-        <div class="">
-          <label class="form-control w-full max-w-xs">
+        <div class="grid lg:grid-cols-2 sm:grid-cols-1 sm:w-full gap-6">
+          <div class="form-control flex-1">
             <div class="label">
-              <span class="label-text">What is your name?</span>
-              <span class="label-text-alt">Top Right label</span>
+              <span class="label-text font-bold">Your Name</span>
             </div>
-            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <textarea class="textarea textarea-bordered h-4 w-[270px]" placeholder="Enter Your Full name"></textarea>
+          </div>
+          <div class="flex-1">
             <div class="label">
-              <span class="label-text-alt">Bottom Left label</span>
-              <span class="label-text-alt">Bottom Right label</span>
+              <span class="label-text">Your Email</span>
             </div>
-          </label>
-          <button class="btn btn-error">Error</button>
+            <textarea class="textarea textarea-bordered h-4 w-[250px]" placeholder="Enter Your Email"></textarea>
+          </div>
+          <div>
+            <div class="flex-1">
+              <div class="label">
+                <span class="label-text">Your Sunject</span>
+              </div>
+              <textarea class="textarea textarea-bordered h-4 w-[250px]" placeholder="Enter Your Subject"></textarea>
+            </div>
+            <div class="flex-1">
+              <div class="label">
+                <span class="label-text">Your Pone</span>
+              </div>
+              <textarea class="textarea textarea-bordered h-4 w-[250px]" placeholder="Enter Your Phone Number"></textarea>
+            </div>
+            <a class="btn bg-[#FF4240]">Sent Message</a>
+          </div>
+        </div>
+        <div>
         </div>
       </div>
       <!-- Social section -->
@@ -476,7 +502,7 @@
     </section>
   </header>
 
-  <footer class="footer p-10 bg-base-200 text-base-content">
+  <footer class="footer p-10 bg-[#131318] text-[#FFFFFF]">
     <aside class="pl-6">
       <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
       <p>Dit amet consectetur Condimentum </p>
@@ -490,24 +516,27 @@
       </div>
     </aside>
     <nav>
-      <header class="footer-title">Services</header>
-      <a class="link link-hover">Branding</a>
-      <a class="link link-hover">Design</a>
-      <a class="link link-hover">Marketing</a>
-      <a class="link link-hover">Advertisement</a>
-    </nav>
-    <nav>
       <header class="footer-title">Company</header>
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
-      <a class="link link-hover">Press kit</a>
+      <a class="link link-hover">About Us</a>
+      <a class="link link-hover">Leadership</a>
+      <a class="link link-hover">Career</a>
+      <a class="link link-hover">News</a>
+      <a class="link link-hover">Legal Notice</a>
     </nav>
     <nav>
-      <header class="footer-title">Legal</header>
-      <a class="link link-hover">Terms of use</a>
-      <a class="link link-hover">Privacy policy</a>
-      <a class="link link-hover">Cookie policy</a>
+      <header class="footer-title">Support</header>
+      <a class="link link-hover">Help Center</a>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Ticket Support</a>
+      <a class="link link-hover">Contaact Us</a>
+    </nav>
+    <nav>
+      <header class="footer-title">Services</header>
+      <a class="link link-hover">Academy</a>
+      <a class="link link-hover">Group Lesson</a>
+      <a class="link link-hover">Private Lesson</a>
+      <a class="link link-hover">Hockeys for Kids</a>
+      <a class="link link-hover">Hockeys for Adult</a>
     </nav>
   </footer>
 </body>
